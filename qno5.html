@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WAP to print that person is eligible to vote or not.</title>
+	<script type="text/javascript">
+		function eligible()
+		{
+			let nm,ag;
+			nm=document.getElementById('myname').value;
+			ag=document.getElementById('age').value;
+			if(ag>=18)
+				document.write("Dear"+nm "You are eligible to vote");
+			else
+				document.write("Dear"+nm "You are not eligible to vote");
+		}
+		
+	</script>
+</head>
+<body>
+	<form>
+		Name=<input type="text" id="myname">
+		Age=<input type="text" id="age">
+		<input type="button" onclick="eligible()" value="vote">
+	</form>
+
+</body>
+</html>
